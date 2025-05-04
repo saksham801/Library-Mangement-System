@@ -1,5 +1,6 @@
 
-![Library Management System](https://drive.google.com/file/d/1cCgJt0rn-trfXdkVexU1T3F4VcSIjQA3/view?usp=drive_link)
+![Library Management System](https://github.com/saksham801/Library-Mangement-System/blob/26d6de18b1a4a3f198e1897aea3936ad2a84e6af/ChatGPT%20Image%20May%204%2C%202025%2C%2010_27_15%20PM.png)
+
 
 # 📚 Library Management System (Console-Based in Python)
 
