@@ -1,111 +1,179 @@
 
-# Library Mangement System
+![Library Management System](https://drive.google.com/file/d/1cCgJt0rn-trfXdkVexU1T3F4VcSIjQA3/view?usp=drive_link)
 
+# 📚 Library Management System (Console-Based in Python)
 
+A fully functional **Library Management System** built in Python that runs in the terminal and offers two separate user roles: **Admins** and **General Users**. This project simulates a real-world library system including book reservation, issuing, returning, and account management.
 
-## 1.Welcome.py
+> **Made for learning, testing, and managing a simplified library interface through code.**
 
-Acts as the main menu or entry point for the application. It allows the user to choose between Library Admin and User Login, and based on the choice, it directs to respective operations like Register, Login, Retrieve Username/Password, or Update Details.
+---
 
-## 2. admin.py
-Handles functionality for library administrators, including:
+## ✨ Features at a Glance
 
-• Registering new admins
+| Admin Features | User Features |
+| -------------- | ------------- |
+| Register/Login | Register/Login |
+| Add/Delete Books | Search Books |
+| Issue/Return Books | Reserve/Return Books |
+| View Book Status | View Issued Books |
+| Update Credentials | Update Credentials |
 
-• Logging in
+---
 
-• Retrieving forgotten usernames or passwords
+## 🧩 Project Architecture
 
-• Updating admin details
-
-## 3. user.py
-Manages operations for regular users, similar to admin.py, including:
-
-• User registration
-
-• Login
-
-• Retrieving usernames/passwords
-
-• Updating personal details
-
-## 4.main.py
-
-Works as a connector or driver script that possibly handles high-level integration or testing between modules like book management, user management, or admin functionalities.
-
-## 5. book.py
-Manages all book-related operations in the library system, such as:
-
-• Adding new books
-
-• Displaying available books
-
-• Issuing or returning books
-
-• Searching for books
-
-## 6.umangement.py
-Responsible for user-side book interactions, such as:
-
-• Viewing issued books
-
-• Reserving books
-
-• Interacting with the library system from a user's perspective
-
-## 7.lmangement.py
-Handles admin-side book and library management, including:
-
-• Managing book inventory
-
-• Viewing issued/reserved books by users
-
-• Admin-related tracking and book allocation
-
-
-## Install All Required Libries
-
-To run install, run the following commond
-
-```bash
-  pip install pymongo
 ```
-```bash
-  pip install pyttsx3
-```
-```bash
-  pip install string
-```
-```bash
-  pip install smtplib
-```
-```bash
-  pip install os
-```
-```bash
-  pip install requests
+LibraryManagementSystem/
+├── Welcome.py         # Entry point for menu & navigation
+├── admin.py           # Admin registration & credential system
+├── user.py            # User registration & credential system
+├── book.py            # Book CRUD operations
+├── umangement.py      # User-side book interaction logic
+├── lmangement.py      # Admin-side inventory & records
+├── main.py            # Optional module for test integration
 ```
 
+Each module has been designed to handle one responsibility, making the code modular, maintainable, and scalable.
 
+---
 
-## Contributing
+## 🛠️ Requirements
 
-Contributions are always welcome!
+- Python 3.7 or higher
+- Runs entirely on the **standard library** (no pip installs needed!)
 
-Welcome Just share the ideas or any problems on dubeysaksham801@gmail.com
+---
 
-Please adhere to this project's `code of conduct`.
+## ⚙️ Installation & Setup
 
+1. **Clone the Repository**
 
-## Features
+   ```bash
+   git clone https://github.com/your-username/LibraryManagementSystem.git
+   cd LibraryManagementSystem
+   ```
 
-- Sending OTPs And Verfiying
-- Sending All Details of book to the User
-- Sending Logins Details like Country , ip ,etc to the User or Admin
-- All Are Free
+2. **(Optional) Create a Virtual Environment**
 
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # Windows: venv\Scripts\activate
+   ```
 
-## Feedback
+3. **Run the Project**
 
-If you have any feedback, please reach out to us at dubeysaksham801@gmail.com
+   ```bash
+   python Welcome.py
+   ```
 
+   You will be prompted with:
+
+   ```
+   1. Library Admin
+   2. User Login
+   ```
+
+---
+
+## 🧑‍💻 Usage Instructions
+
+### ➤ For Admins:
+
+- Register or Login
+- Add new books with details like title, author, and ID
+- Issue or return books for users
+- View all reserved/issued books
+- Update login credentials
+
+### ➤ For Users:
+
+- Register or Login
+- Search or reserve available books
+- Return borrowed books
+- View your current issued books
+- Update your account information
+
+---
+
+## 🔍 How It Works (Behind the Scenes)
+
+- Data is stored using **in-memory data structures** (lists & dictionaries)
+- Functions are imported across modules using clean architecture
+- Modular design keeps admin and user functionality separate
+- Easy to extend by adding file storage (JSON/CSV) or a database (SQLite)
+
+---
+
+## 🧪 Modules in Detail
+
+### 1. `Welcome.py`
+**Acts as the starting point**. Displays the main menu and directs users to Admin or User interfaces.
+
+### 2. `admin.py`
+Handles **Admin registration, login, password recovery, and profile updates**.
+
+### 3. `user.py`
+Handles **User registration, login, password recovery, and profile updates**.
+
+### 4. `book.py`
+Responsible for **book inventory operations** — adding, removing, issuing, returning, and listing books.
+
+### 5. `umangement.py`
+Manages **user-specific book actions** like reservation and viewing issued books.
+
+### 6. `lmangement.py`
+Used by admins to **monitor issued and reserved books** and track the entire inventory status.
+
+### 7. `main.py`
+Optional module to **test and debug functions independently**.
+
+---
+
+## 💡 Expansion Ideas
+
+- Add **JSON or SQLite** for persistent storage
+- Include **due dates** and **fine calculation**
+- Implement a **Tkinter GUI** or **Flask Web Interface**
+- Add **role-based access controls**
+- Include **logging and exception handling**
+
+---
+
+## ⚠️ Common Errors & Fixes
+
+**Error:**
+```
+AttributeError: 'NoneType' object has no attribute 'get'
+```
+
+**Reason:** A function (like `login()`) is returning `None` due to incorrect input or logic.
+
+**Fix:** Ensure the function returns a dictionary or object with attributes, and validate all input paths.
+
+---
+
+## 📬 Contact
+
+For any help, suggestions, or contributions:
+
+**Email:** [dubeysaksham801@gmail.com](mailto:dubeysaksham801@gmail.com)
+
+I welcome collaboration, feedback, or improvements from learners and developers alike!
+
+---
+
+## 📝 License
+
+This project is open-source and free to use for learning, modification, and personal projects. Attribution is appreciated.
+
+---
+
+## ⭐ Final Words
+
+This project is perfect for:
+- Students learning **Python basics**
+- Practice with **functions, modules, and CLI apps**
+- Building your **first major Python project**
+
+> Made with passion for learning and sharing. Happy coding!
