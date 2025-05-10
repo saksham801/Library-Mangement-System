@@ -2,7 +2,13 @@
 ![Library Management System](https://github.com/saksham801/Library-Mangement-System/blob/26d6de18b1a4a3f198e1897aea3936ad2a84e6af/ChatGPT%20Image%20May%204%2C%202025%2C%2010_27_15%20PM.png)
 
 
-# 📚 Library Management System (Console-Based in Python)
+# <img src="https://github.com/saksham801/Library-Mangement-System/blob/5424e4fe8f2d458cafe7a894efb25d1203167d94/ChatGPT%20Image%20May%2010%2C%202025%2C%2008_19_17%20PM.svg" alt="Logo" width="40" style="vertical-align: middle"> Library Management System...
+#Library Management System (Console-Based in Python)
+
+A fully functional **Library Management System** built in Python..." alt="Logo" width="200">
+</div>
+
+
 
 A fully functional **Library Management System** built in Python that runs in the terminal and offers two separate user roles: **Admins** and **General Users**. This project simulates a real-world library system including book reservation, issuing, returning, and account management.
 
